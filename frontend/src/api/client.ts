@@ -2,7 +2,7 @@ import axios from 'axios';
 import { ForecastRequest, ForecastResponse, ModelComparisonResponse } from '../types';
 
 const api = axios.create({
-  baseURL: '/api', // Proxy set up in vite.config.ts routes to backend
+  baseURL: import.meta.env.VITE_API_URL || '/api',
   headers: {
     'Content-Type': 'application/json',
   },

@@ -20,9 +20,14 @@ app = FastAPI(
 )
 
 # CORS config
+origins = [
+    "http://localhost:5173",
+    "https://homegoal-ai-frontend.onrender.com",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # For dev. In prod: restrict to frontend domains
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
