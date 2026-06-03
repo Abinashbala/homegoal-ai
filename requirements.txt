@@ -1,0 +1,43 @@
+# Data & Analytics
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.0
+xlrd>=2.0.0
+
+# Machine Learning
+scikit-learn>=1.3.0
+xgboost>=1.7.0
+prophet>=1.1.4
+statsmodels>=0.14.0
+joblib>=1.3.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.14.0
+kaleido>=0.2.1
+
+# Jupyter
+jupyter>=1.0.0
+jupyterlab>=4.0.0
+ipykernel>=6.0.0
+ipywidgets>=8.0.0
+
+# Backend (Phase 6)
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.4.0
+python-multipart>=0.0.6
+httpx>=0.25.0
+
+# Database (Phase 6)
+supabase>=1.2.0
+psycopg2-binary>=2.9.0
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# Utilities
+python-dotenv>=1.0.0
+requests>=2.31.0

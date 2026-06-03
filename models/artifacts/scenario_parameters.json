@@ -1,0 +1,29 @@
+{
+  "hpi": {
+    "conservative_cagr_pct": 3.1865,
+    "expected_cagr_pct": 4.4485,
+    "optimistic_cagr_pct": 6.8732,
+    "base_hpi_2025": 147.65,
+    "basis": {
+      "conservative": "Pre-COVID avg growth 2014-2019",
+      "expected": "Full-period CAGR 2013-2025",
+      "optimistic": "Post-COVID avg growth 2021-2025"
+    }
+  },
+  "fx": {
+    "conservative_cagr_pct": 2.0,
+    "expected_cagr_pct": 3.3392,
+    "optimistic_cagr_pct": 4.2836,
+    "base_rate_2025": 24.47,
+    "basis": {
+      "conservative": "Below historical avg (adverse FX scenario)",
+      "expected": "Full-period CAGR 2013-2025",
+      "optimistic": "Recent 3-year avg 2022-2025"
+    }
+  },
+  "cpi_scenarios": {
+    "conservative_pct": 7.5,
+    "expected_pct": 6.0,
+    "optimistic_pct": 4.0
+  }
+}

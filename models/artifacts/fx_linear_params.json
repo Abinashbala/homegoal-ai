@@ -1,0 +1,8 @@
+{
+  "model_type": "linear_trend",
+  "target": "rate_close",
+  "intercept": 15.833490358126724,
+  "slope": 0.045925932356413644,
+  "train_period": "Jan 2013 \u2013 Dec 2022",
+  "test_mape": 3.7596
+}

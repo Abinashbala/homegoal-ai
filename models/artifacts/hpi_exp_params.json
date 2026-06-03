@@ -1,0 +1,9 @@
+{
+  "model_type": "exponential_trend",
+  "target": "hpi_primary",
+  "log_intercept": 4.480001995821514,
+  "log_slope": 0.006240470067259883,
+  "implied_annual_growth_pct": 2.5276,
+  "train_period": "Q2 2013 \u2013 Q4 2021",
+  "test_mape": 11.9758
+}

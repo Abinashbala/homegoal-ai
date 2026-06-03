@@ -1,0 +1,8 @@
+{
+  "model_type": "linear_trend",
+  "target": "hpi_primary",
+  "intercept": 88.01904761904763,
+  "slope": 0.6056022408963586,
+  "train_period": "Q2 2013 \u2013 Q4 2021",
+  "test_mape": 12.9546
+}

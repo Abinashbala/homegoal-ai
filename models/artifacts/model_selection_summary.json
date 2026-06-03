@@ -1,0 +1,101 @@
+{
+  "hpi_results": [
+    {
+      "model": "Linear Trend",
+      "MAE": 17.7985,
+      "RMSE": 20.1379,
+      "MAPE": 12.9546,
+      "intercept": 88.019,
+      "slope": 0.6056
+    },
+    {
+      "model": "Exponential Trend",
+      "MAE": 16.4747,
+      "RMSE": 18.7389,
+      "MAPE": 11.9758,
+      "log_intercept": 4.48,
+      "log_slope": 0.0062,
+      "implied_annual_growth_pct": 2.5276
+    },
+    {
+      "model": "Prophet",
+      "MAE": 20.0686,
+      "RMSE": 22.3748,
+      "MAPE": 14.6607,
+      "changepoints": 5
+    },
+    {
+      "model": "XGBoost",
+      "MAE": 24.7233,
+      "RMSE": 27.5215,
+      "MAPE": 18.0687,
+      "n_train_usable": 31,
+      "features": [
+        "t",
+        "quarter_num",
+        "hpi_lag1",
+        "hpi_lag4",
+        "growth_lag1",
+        "hpi_roll4q",
+        "post_covid",
+        "covid_period"
+      ]
+    }
+  ],
+  "fx_results": [
+    {
+      "model": "Linear Trend",
+      "MAE": 0.8697,
+      "RMSE": 0.9121,
+      "MAPE": 3.7596,
+      "intercept": 15.83349,
+      "slope": 0.045926
+    },
+    {
+      "model": "Exponential Trend",
+      "MAE": 0.5701,
+      "RMSE": 0.624,
+      "MAPE": 2.468,
+      "log_intercept": 2.769284,
+      "log_slope": 0.002484,
+      "implied_annual_growth_pct": 3.0259
+    },
+    {
+      "model": "Prophet",
+      "MAE": 0.3822,
+      "RMSE": 0.4747,
+      "MAPE": 1.6591,
+      "changepoints": 8
+    }
+  ],
+  "best_hpi": {
+    "model": "Exponential Trend",
+    "MAE": 16.4747,
+    "RMSE": 18.7389,
+    "MAPE": 11.9758,
+    "log_intercept": 4.48,
+    "log_slope": 0.0062,
+    "implied_annual_growth_pct": 2.5276
+  },
+  "best_fx": {
+    "model": "Prophet",
+    "MAE": 0.3822,
+    "RMSE": 0.4747,
+    "MAPE": 1.6591,
+    "changepoints": 8
+  },
+  "has_prophet": true,
+  "has_xgb": true,
+  "hpi_cagr_scenarios": {
+    "conservative": 3.1865,
+    "expected": 4.4485,
+    "optimistic": 6.8732
+  },
+  "fx_cagr_scenarios": {
+    "conservative": 2.0,
+    "expected": 3.3392,
+    "optimistic": 4.2836
+  },
+  "base_hpi_2025": 147.65,
+  "base_fx_2025": 24.47
+}
