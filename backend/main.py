@@ -22,7 +22,7 @@ app = FastAPI(
 # CORS config
 origins = [
     "http://localhost:5173",
-    "https://homegoal-ai-frontend.onrender.com",
+    "https://homegoal-ai.onrender.com",
 ]
 
 app.add_middleware(
