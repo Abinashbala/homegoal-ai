@@ -7,6 +7,7 @@ import Planner from './pages/Planner';
 import Results from './pages/Results';
 import ScenarioAnalysis from './pages/ScenarioAnalysis';
 import RecruiterInsights from './pages/RecruiterInsights';
+import WealthGrowthLab from './pages/WealthGrowthLab';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Route path="/results" element={<Results />} />
               <Route path="/scenarios" element={<ScenarioAnalysis />} />
               <Route path="/insights" element={<RecruiterInsights />} />
+              <Route path="/lab" element={<WealthGrowthLab />} />
             </Routes>
           </main>
         </div>

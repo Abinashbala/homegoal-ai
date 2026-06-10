@@ -1,11 +1,11 @@
 import { useState, useMemo } from 'react';
 import { usePlanner } from '../context/PlannerContext';
-import { Navigate } from 'react-router-dom';
+import { Navigate, Link } from 'react-router-dom';
 import KPICard from '../components/KPICard';
 import StressMeter from '../components/StressMeter';
 import { formatCurrency, formatPercent } from '../utils/format';
 import { PlannerAPI } from '../api/client';
-import { Loader2, X, Home, Clock } from 'lucide-react';
+import { Loader2, X, Home, Clock, GraduationCap } from 'lucide-react';
 
 // ── EMI Calculator helper ─────────────────────────────────────────────────────
 function calcEMI(principal: number, annualRatePct: number, tenureYears: number) {
@@ -616,7 +616,6 @@ export default function Results() {
                     </div>
                   </div>
 
-                  {/* View Full Comparison CTA */}
                   <button
                     onClick={() => setShowModal(true)}
                     className="btn-primary w-full mt-2 text-center"
@@ -626,6 +625,22 @@ export default function Results() {
                   </button>
                 </div>
               )}
+
+              {/* Wealth Growth Lab CTA */}
+              <div className="mt-6 pt-6 border-t border-gray-100">
+                <div className="bg-brand-50 border border-brand-100 rounded-xl p-5 text-center">
+                  <h3 className="font-bold text-brand-900 mb-2 flex items-center justify-center gap-2">
+                    <GraduationCap size={20} className="text-brand-600" />
+                    How do I reach this goal?
+                  </h3>
+                  <p className="text-xs text-brand-800 mb-4 leading-relaxed">
+                    Understand how time, inflation, and property appreciation affect your goal in the Wealth Growth Lab.
+                  </p>
+                  <Link to="/lab" className="btn-secondary w-full justify-center">
+                    Explore Wealth Growth Lab
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
 

@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Home as HomeIcon, LayoutDashboard, LineChart, Database } from 'lucide-react';
+import { Home as HomeIcon, LayoutDashboard, LineChart, Database, GraduationCap } from 'lucide-react';
 import clsx from 'clsx';
 
 export default function Navbar() {
@@ -9,6 +9,7 @@ export default function Navbar() {
     { name: 'Home', path: '/', icon: HomeIcon },
     { name: 'Planner', path: '/planner', icon: LayoutDashboard },
     { name: 'Scenarios', path: '/scenarios', icon: LineChart },
+    { name: 'Growth Lab', path: '/lab', icon: GraduationCap },
     { name: 'Insights', path: '/insights', icon: Database },
   ];
 
